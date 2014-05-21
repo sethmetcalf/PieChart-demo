@@ -1,0 +1,17 @@
+<!doctype html>
+  <head>
+    <script src="//code.angularjs.org/1.1.5/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/d3.js"></script>
+    <script src="scripts/controllers/PieCtrl.js"></script>
+    <script src="scripts/directives/d3Basic.js"></script>
+    <link rel="stylesheet" href="styles/styles.css"/>
+
+    <meta charset="utf-8">
+    <title>d3 and Angular</title>
+    <meta name="description" content="d3 and Angular">
+  </head>
+  <body ng-app="myApp" ng-controller="PieCtrl">
+    <pie-chart data="chart" ng-repeat="chart in charts"></pie-chart>
+  </body>
+</html>
